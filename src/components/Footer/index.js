@@ -6,7 +6,7 @@ import { animateScroll as scroll } from 'react-scroll';
 import { TiLocation } from 'react-icons/ti';
 import { FiSmartphone } from 'react-icons/fi';
 import { MdEmail } from 'react-icons/md';
-
+import "./style.css"
 
 const Footer = () => {
 
@@ -17,8 +17,8 @@ const Footer = () => {
     return (
         <FooterContainer>
             <FooterWrap>
-                <Button onClick={toggleHome}>
-                    Back to up
+                <Button className="btn" onClick={toggleHome}>
+                    Back to top
                 </Button>
                 {/* <FooterLinksContainer>
                     <FooterLinksWrapper>
@@ -76,16 +76,16 @@ const Footer = () => {
                         
                         
                         <SocialIcons style={{marginTop: '-10px'}}>
-                            <SocialIconLink href="/" target="_blank" aria-label="Github">
+                            <SocialIconLink href="https://github.com/k-marczak" target="_blank" aria-label="Github">
                                 <FaGithub />
                             </SocialIconLink>
-                            <SocialIconLink href="/" target="_blank" aria-label="Linkedin">
+                            <SocialIconLink href="https://www.linkedin.com/in/kamil-marczakk/" target="_blank" aria-label="Linkedin">
                                 <FaLinkedin />
                             </SocialIconLink>
-                            <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+                            <SocialIconLink href="https://www.instagram.com/koozlarz/" target="_blank" aria-label="Instagram">
                                 <FaInstagram />
                             </SocialIconLink>
-                            <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+                            <SocialIconLink href="https://www.facebook.com/Cameel54/" target="_blank" aria-label="Facebook">
                                 <FaFacebook />
                             </SocialIconLink>
                             

@@ -4,7 +4,9 @@ import Icon2 from '../../images/project1.png'
 import Icon3 from '../../images/project-covid.png'
 import Icon4 from '../../images/snake.png'
 import Icon5 from '../../images/FormValidation.png'
-import Icon6 from '../../images/Coral.png'
+import './style.css'
+import { GrGithub } from 'react-icons/gr';
+import { GiNetworkBars } from 'react-icons/gi';
 
 import { ServicesContainer, ServicesH1, ServicesWrapper, ServicesCard, ServicesIcon, ServicesH2, ServicesP, LinksContainer, ProjectLink } from './ServicesElements'
 
@@ -20,12 +22,13 @@ const Services = () => {
                     <ServicesP>This project is a React-app shoe store, using commerce.js material-ui stripe.js </ServicesP>
 
                     <LinksContainer>
-                        <a href="//www.twitter.com" style={{marginRight: 50 + 'px', textDecoration: 'none'}} target="_blank" aria-label="Twitter">
-                                    Github
+                        
+                        <a href="https://github.com/k-marczak/Commerce-Shop" style={{marginRight: 120 + 'px', textDecoration: 'none'}} target="_blank" aria-label="Twitter" className="link">
+                                    Github <GrGithub />
                         </a>
-                        <ProjectLink href="//www.twitter.com" style={{marginLeft: 50 + 'px'}} target="_blank" aria-label="Twitter">
-                                    Live
-                        </ProjectLink>
+                        <a href="https://commerce-shop.netlify.app" style={{marginLeft: 120 + 'px', textDecoration: 'none', marginBottom: '10px'}} target="_blank" className="link" aria-label="Twitter">
+                                    Live <GiNetworkBars />
+                        </a>
                     </LinksContainer>
 
                 </ServicesCard>
@@ -36,12 +39,12 @@ const Services = () => {
                    
 
                     <LinksContainer>
-                        <a href="//www.twitter.com" style={{marginRight: 50 + 'px', textDecoration: 'none'}} target="_blank" aria-label="Twitter">
-                                    Github
+                        <a href="https://github.com/k-marczak/Project-support-it" className="link" style={{marginRight: 120 + 'px', textDecoration: 'none'}} target="_blank" aria-label="Twitter">
+                                    Github <GrGithub />
                         </a>
-                        <ProjectLink href="//www.twitter.com" style={{marginLeft: 50 + 'px'}} target="_blank" aria-label="Twitter">
-                                    Live
-                        </ProjectLink>
+                        <a href="https://support-it.netlify.app/" className="link" style={{marginLeft: 120 + 'px', textDecoration: 'none', marginBottom: '10px'}} target="_blank" aria-label="Twitter">
+                                    Live <GiNetworkBars />
+                        </a>
                     </LinksContainer>
 
                     
@@ -53,12 +56,12 @@ const Services = () => {
                     <ServicesP>Simple multi-page website about covid-19. </ServicesP>
 
                     <LinksContainer>
-                        <a href="//www.twitter.com" style={{marginRight: 50 + 'px', textDecoration: 'none'}} target="_blank" aria-label="Twitter">
-                                    Github
+                        <a href="https://github.com/k-marczak/Zdrowie-covid-react" className="link" style={{marginRight: 120 + 'px', textDecoration: 'none'}} target="_blank" aria-label="Twitter">
+                                    Github <GrGithub />
                         </a>
-                        <ProjectLink href="//www.twitter.com" style={{marginLeft: 50 + 'px'}} target="_blank" aria-label="Twitter">
-                                    Live
-                        </ProjectLink>
+                        <a href="https://zdrowie-covid.netlify.app/" className="link" style={{marginLeft: 120 + 'px', textDecoration: 'none', marginBottom: '10px'}} target="_blank" aria-label="Twitter">
+                                    Live <GiNetworkBars />
+                        </a>
                     </LinksContainer>
 
                 </ServicesCard>
@@ -68,12 +71,12 @@ const Services = () => {
                     <ServicesP>Snake is one of my first projects. I made it to learn JavaScript. </ServicesP>
 
                     <LinksContainer>
-                        <a href="//www.twitter.com" style={{marginRight: 50 + 'px', textDecoration: 'none'}} target="_blank" aria-label="Twitter">
-                                    Github
+                        <a href="https://github.com/k-marczak/Snake-Game-JS" className="link" style={{marginRight: 120 + 'px', textDecoration: 'none'}} target="_blank" aria-label="Twitter">
+                                    Github <GrGithub />
                         </a>
-                        <ProjectLink href="//www.twitter.com" style={{marginLeft: 50 + 'px'}} target="_blank" aria-label="Twitter">
-                                    Live
-                        </ProjectLink>
+                        <a href="https://snake-project.netlify.app/" className="link" style={{marginLeft: 120 + 'px', textDecoration: 'none', marginBottom: '10px'}} target="_blank" aria-label="Twitter">
+                                    Live <GiNetworkBars />
+                        </a>
                     </LinksContainer>
 
                 </ServicesCard>
@@ -83,12 +86,12 @@ const Services = () => {
                     <ServicesP>Simple Form using HTML CSS JS. </ServicesP>
 
                     <LinksContainer>
-                        <a href="//www.twitter.com" style={{marginRight: 50 + 'px', textDecoration: 'none'}} target="_blank" aria-label="Twitter">
-                                    Github
+                        <a href="https://github.com/k-marczak/Form-validation-js" className="link" style={{marginRight: 120 + 'px', textDecoration: 'none'}} target="_blank" aria-label="Twitter">
+                                    Github <GrGithub />
                         </a>
-                        <ProjectLink href="//www.twitter.com" style={{marginLeft: 50 + 'px'}} target="_blank" aria-label="Twitter">
-                                    Live
-                        </ProjectLink>
+                        <a href="https://validation-formm.netlify.app/" className="link" style={{marginLeft: 120 + 'px', textDecoration: 'none', marginBottom: '10px'}} target="_blank" aria-label="Twitter">
+                                    Live <GiNetworkBars />
+                        </a>
                     </LinksContainer>
 
                 </ServicesCard>

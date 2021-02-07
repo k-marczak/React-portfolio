@@ -141,10 +141,26 @@ export const LinksContainer = styled.div`
     display: flex;
     text-align: center;
     justify-content: space-between;
+
     
 `
 export const ProjectLink = styled.div`
     text-decoration: none;
+    
+`
+
+export const link = styled.a`
+
+    transition: all 0.2s ease-in-out;
+    color: white !important; 
+  
+
+    &:hover{
+        transform: scale(1.02);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        
+    }
     
 `
 
