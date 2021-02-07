@@ -130,7 +130,7 @@ export const Box = styled.div`
     &:hover{
         transform: scale(1.06);
         transition: all 0.2s ease-in-out;
-        cursor: pointer;
+        
     }
 
 
@@ -158,7 +158,7 @@ export const Box1 = styled.div`
     &:hover{
         transform: scale(1.06);
         transition: all 0.2s ease-in-out;
-        cursor: pointer;
+        
     }
 
     @media screen and (max-width: 480px){

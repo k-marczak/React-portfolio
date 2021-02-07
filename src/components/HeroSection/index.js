@@ -24,11 +24,11 @@ const HeroSection = () => {
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
             </HeroBg>
             <HeroContent>
-                <HeroH1>Witaj! </HeroH1>
+                <HeroH1 style={{marginTop: '-50px'}}>Hello!</HeroH1>
                 <HeroP>
-                Cześć, nazywam się Kamil i tworzę strony internetowe.
+                My name is Kamil and i'm Junior Front End Developer
                 </HeroP>
-                <HeroBtnWrapper>
+                {/* <HeroBtnWrapper>
                     <Button to="/"
                     onMouseEnter={onHover}
                     onMouseLeave={onHover}
@@ -38,7 +38,7 @@ const HeroSection = () => {
                     >
                         Napisz do mnie {hover ? <ArrowForward /> : <ArrowRight/>}
                     </Button>
-                </HeroBtnWrapper>
+                </HeroBtnWrapper> */}
             </HeroContent>
         </HeroContainer>
     )

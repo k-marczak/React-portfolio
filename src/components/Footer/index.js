@@ -1,20 +1,24 @@
 import React from 'react'
 import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink } from './FooterElements'
-import { FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaLinkedin } from 'react-icons/fa'
+import { FaGithub, FaInstagram, FaFacebook, FaLinkedin } from 'react-icons/fa'
 import { Button } from '../ButtonElement';
+import { animateScroll as scroll } from 'react-scroll';
+import { TiLocation } from 'react-icons/ti';
+import { FiSmartphone } from 'react-icons/fi';
+import { MdEmail } from 'react-icons/md';
 
 
 const Footer = () => {
 
-    // const toggleHome = () => {
-    //     scroll.scrollToTop();
-    // }
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    }
 
     return (
         <FooterContainer>
             <FooterWrap>
-                <Button>
-                    Do góry
+                <Button onClick={toggleHome}>
+                    Back to up
                 </Button>
                 {/* <FooterLinksContainer>
                     <FooterLinksWrapper>
@@ -53,26 +57,40 @@ const Footer = () => {
                 </FooterLinksContainer> */}
                 <SocialMedia>
                     <SocialMediaWrap>
+                        {/* <SocialLogo to='/'>
+                        
+                        <TiLocation style={{marginRight: '5px'}}/>    Warsaw, Poland 
+
+                        </SocialLogo> */}
                         <SocialLogo to='/'>
-                            dolla
+                        
+                        <FiSmartphone style={{marginRight: '5px'}}/>    +48 882 186 957 
+
                         </SocialLogo>
-                        <WebsiteRights>dolla &copy; {new Date().getFullYear()} All right reserved.</WebsiteRights>
-                        <SocialIcons>
-                            <SocialIconLink href="/" target="_blank" aria-label="Facebook">
-                                <FaFacebook />
-                            </SocialIconLink>
-                            <SocialIconLink href="/" target="_blank" aria-label="Instagram">
-                                <FaInstagram />
-                            </SocialIconLink>
-                            <SocialIconLink href="/" target="_blank" aria-label="Youtube">
-                                <FaYoutube />
-                            </SocialIconLink>
-                            <SocialIconLink href="//www.twitter.com" target="_blank" aria-label="Twitter">
-                                <FaTwitter />
+                        <SocialLogo to='/'>
+                        
+                        <MdEmail style={{marginRight: '5px'}}/>    k_marczak@outlook.com 
+
+                        </SocialLogo>
+
+                        
+                        
+                        <SocialIcons style={{marginTop: '-10px'}}>
+                            <SocialIconLink href="/" target="_blank" aria-label="Github">
+                                <FaGithub />
                             </SocialIconLink>
                             <SocialIconLink href="/" target="_blank" aria-label="Linkedin">
                                 <FaLinkedin />
                             </SocialIconLink>
+                            <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+                                <FaInstagram />
+                            </SocialIconLink>
+                            <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+                                <FaFacebook />
+                            </SocialIconLink>
+                            
+                            
+                            
                         </SocialIcons>
                     </SocialMediaWrap>
                 </SocialMedia>

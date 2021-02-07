@@ -51,7 +51,7 @@ const Navbar = ({ toggle }) => {
                             // activeClass="active"
 
                             >
-                                O mnie
+                                About me
                             </NavLinks>
                         </NavItem>
                         <NavItem>
@@ -61,7 +61,7 @@ const Navbar = ({ toggle }) => {
                             spy={true}
                             exact="true"
                             offset={-80}>
-                                Umiejętności 
+                                Skills 
                             </NavLinks>
                         </NavItem>
                         <NavItem>
@@ -71,7 +71,7 @@ const Navbar = ({ toggle }) => {
                             spy={true}
                             exact="true"
                             offset={-80}>
-                                Projekty
+                                Projects
                             </NavLinks>
                         </NavItem>
                         <NavItem>
@@ -83,7 +83,7 @@ const Navbar = ({ toggle }) => {
                             offset={-80}
                             class="lost"
                            >
-                                Kontakt
+                                Contact
                             </NavLinks>
                         </NavItem>
                     </NavMenu>

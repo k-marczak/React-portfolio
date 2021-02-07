@@ -10,16 +10,16 @@ const GlobalStyle = createGlobalStyle`
         height: 60vh;
     }
 
-    .gowno{
+    .element{
         display: block;
     }
 
-    .gowno2{
+    .element2{
         display: block;
         margin-top: 30px;
     }
     
-    .gowno3{
+    .element3{
         position: relative;
         top: 5px;
     }
@@ -155,10 +155,11 @@ const InfoSection = ({lightBg, id }) => {
     const [error, setError] = useState('');
     
     const handleSubmit = e => {
-        e.preventDefault();
-        console.log('submitted!')
-        console.log(state);
+        
 
+        
+
+        
         for(let key in state) {
             if(state[key] === ''){
                 setError(`You must provide the ${key}`)
@@ -169,8 +170,9 @@ const InfoSection = ({lightBg, id }) => {
         setError('');
         const regex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
         const test = regex.test(state.email);
-        alert("Email został wysłany")
+        alert("Email has been sent, thank you.")
 
+        e.preventDefault();
 
     }
 
@@ -192,13 +194,13 @@ const InfoSection = ({lightBg, id }) => {
             <InfoContainer lightBg={lightBg} id={id}>
                 <StyledFormWrapper>
                     <StyledForm onSubmit={handleSubmit}>
-                        <h2>Contact Form</h2>
-                        <label class="gowno3"htmlFor='name'>Name</label>
+                        <h2 style={{marginBottom: '10px'}}>Contact Form</h2>
+                        <label class="element3"htmlFor='name'>Name</label>
                         <StyledInput type='text' name="name" value={state.name} onChange={handleInput} />
-                        <label class="gowno2" htmlFor="email">Email</label>
+                        <label class="element2" htmlFor="email">Email</label>
                         <StyledInput type="email" name="email" value={state.email} onChange={handleInput}  />
                 
-                        <label class="gowno" htmlFor="message">Message</label>
+                        <label class="element" htmlFor="message">Message</label>
                         <StyledTextArea name="message" value={state.message} onChange={handleInput} />
                         {error && ( <StyledError><p>{error}</p></StyledError> )}
                        

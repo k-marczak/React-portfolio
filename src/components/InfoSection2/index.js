@@ -21,7 +21,7 @@ const InfoSection2 = ({lightBg, id, imgStart, topLine, lightText, heading, darkT
             <Features lightBg={lightBg} id={id}>
                 <SkillsWrapper>
              
-                    <h1 class="skills_heading">Umiejętności i narzędzia</h1>
+                    <h1 class="skills_heading">Skills & Tools</h1>
 
                     <FeaturesContent>
                         <Box>

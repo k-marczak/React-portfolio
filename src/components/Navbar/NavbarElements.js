@@ -86,7 +86,7 @@ export const NavLinks = styled(LinkS)`
     height: 100%;
     cursor: pointer;
     outline: none;
-    
+    font-size: 18px;
 
     
 

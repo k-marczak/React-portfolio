@@ -134,7 +134,7 @@ export const ServicesH3 = styled.h2`
 export const ServicesP = styled.p`
     font-size: 1rem;
     text-align: center;
-
+    height: 50px;
 `
 
 export const LinksContainer = styled.div`
