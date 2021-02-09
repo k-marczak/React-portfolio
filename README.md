@@ -28,4 +28,4 @@ $ npm start
 
 ## Demo
 
-Live demo https://kamil-marczak-portfolio.netlify.app/
+Live demo https://my-poortfolioo.netlify.app/
