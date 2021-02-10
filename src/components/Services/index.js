@@ -23,10 +23,10 @@ const Services = () => {
 
                     <LinksContainer>
                         
-                        <a href="https://github.com/k-marczak/Commerce-Shop" style={{marginRight: 120 + 'px', textDecoration: 'none'}} target="_blank" aria-label="Twitter" className="link">
+                        <a href="https://github.com/k-marczak/Commerce-Shop" style={{ textDecoration: 'none'}} target="_blank" aria-label="Twitter" className="link">
                                     Github <GrGithub />
                         </a>
-                        <a href="https://commerce-shop.netlify.app" style={{marginLeft: 120 + 'px', textDecoration: 'none', marginBottom: '10px'}} target="_blank" className="link" aria-label="Twitter">
+                        <a href="https://commerce-shop.netlify.app" style={{ textDecoration: 'none', marginBottom: '10px'}} target="_blank" className="link" aria-label="Twitter">
                                     Live <GiNetworkBars />
                         </a>
                     </LinksContainer>
@@ -39,10 +39,10 @@ const Services = () => {
                    
 
                     <LinksContainer>
-                        <a href="https://github.com/k-marczak/Project-support-it" className="link" style={{marginRight: 120 + 'px', textDecoration: 'none'}} target="_blank" aria-label="Twitter">
+                        <a href="https://github.com/k-marczak/Project-support-it" className="link" style={{ textDecoration: 'none'}} target="_blank" aria-label="Twitter">
                                     Github <GrGithub />
                         </a>
-                        <a href="https://support-it.netlify.app/" className="link" style={{marginLeft: 120 + 'px', textDecoration: 'none', marginBottom: '10px'}} target="_blank" aria-label="Twitter">
+                        <a href="https://support-it.netlify.app/" className="link" style={{ textDecoration: 'none', marginBottom: '10px'}} target="_blank" aria-label="Twitter">
                                     Live <GiNetworkBars />
                         </a>
                     </LinksContainer>
@@ -56,10 +56,10 @@ const Services = () => {
                     <ServicesP>Simple multi-page website about covid-19. </ServicesP>
 
                     <LinksContainer>
-                        <a href="https://github.com/k-marczak/Zdrowie-covid-react" className="link" style={{marginRight: 120 + 'px', textDecoration: 'none'}} target="_blank" aria-label="Twitter">
+                        <a href="https://github.com/k-marczak/Zdrowie-covid-react" className="link" style={{ textDecoration: 'none'}} target="_blank" aria-label="Twitter">
                                     Github <GrGithub />
                         </a>
-                        <a href="https://zdrowie-covid.netlify.app/" className="link" style={{marginLeft: 120 + 'px', textDecoration: 'none', marginBottom: '10px'}} target="_blank" aria-label="Twitter">
+                        <a href="https://zdrowie-covid.netlify.app/" className="link" style={{ textDecoration: 'none', marginBottom: '10px'}} target="_blank" aria-label="Twitter">
                                     Live <GiNetworkBars />
                         </a>
                     </LinksContainer>
@@ -71,10 +71,10 @@ const Services = () => {
                     <ServicesP>Snake is one of my first projects. I made it to learn JavaScript. </ServicesP>
 
                     <LinksContainer>
-                        <a href="https://github.com/k-marczak/Snake-Game-JS" className="link" style={{marginRight: 120 + 'px', textDecoration: 'none'}} target="_blank" aria-label="Twitter">
+                        <a href="https://github.com/k-marczak/Snake-Game-JS" className="link" style={{ textDecoration: 'none'}} target="_blank" aria-label="Twitter">
                                     Github <GrGithub />
                         </a>
-                        <a href="https://snake-project.netlify.app/" className="link" style={{marginLeft: 120 + 'px', textDecoration: 'none', marginBottom: '10px'}} target="_blank" aria-label="Twitter">
+                        <a href="https://snake-project.netlify.app/" className="link" style={{ textDecoration: 'none', marginBottom: '10px'}} target="_blank" aria-label="Twitter">
                                     Live <GiNetworkBars />
                         </a>
                     </LinksContainer>
@@ -86,10 +86,10 @@ const Services = () => {
                     <ServicesP>Simple Form using HTML CSS JS. </ServicesP>
 
                     <LinksContainer>
-                        <a href="https://github.com/k-marczak/Form-validation-js" className="link" style={{marginRight: 120 + 'px', textDecoration: 'none'}} target="_blank" aria-label="Twitter">
+                        <a href="https://github.com/k-marczak/Form-validation-js" className="link" style={{ textDecoration: 'none'}} target="_blank" aria-label="Twitter">
                                     Github <GrGithub />
                         </a>
-                        <a href="https://validation-formm.netlify.app/" className="link" style={{marginLeft: 120 + 'px', textDecoration: 'none', marginBottom: '10px'}} target="_blank" aria-label="Twitter">
+                        <a href="https://validation-formm.netlify.app/" className="link" style={{ textDecoration: 'none', marginBottom: '10px'}} target="_blank" aria-label="Twitter">
                                     Live <GiNetworkBars />
                         </a>
                     </LinksContainer>

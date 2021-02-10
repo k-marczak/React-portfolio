@@ -15,16 +15,16 @@ const Sidebar = ({isOpen, toggle}) => {
             <SidebarWrapper>
                 <SidebarMenu>
                     <SidebarLink to="about" onClick={toggle}>
-                        O mnie
+                        About me
                     </SidebarLink>
                     <SidebarLink to="discover" onClick={toggle}>
-                        Umiejętności
+                        Skills
                     </SidebarLink>
                     <SidebarLink to="services" onClick={toggle}>
-                        Projekty
+                        Projects
                     </SidebarLink>
                     <SidebarLink to="signup" onClick={toggle}>
-                        Kontakt
+                        Contact
                     </SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>

@@ -4,7 +4,7 @@ import obrazek2 from '../../images/css3.png'
 import obrazek3 from '../../images/js.png'
 import obrazek4 from '../../images/220px-React-icon.svg.png'
 import obrazek5 from '../../images/jquery.png'
-import obrazek6 from '../../images/sass.png'
+import obrazek6 from '../../images/java-icon.svg'
 import obrazek7 from '../../images/bootstrap.png'
 import obrazek8 from '../../images/github.png'
 import obrazek9 from '../../images/php.svg'
@@ -48,7 +48,7 @@ const InfoSection2 = ({lightBg, id, imgStart, topLine, lightText, heading, darkT
                         </Box>
                         <Box>
                             <Img src={obrazek6} alt={alt}/>
-                            <Skills>Sass</Skills>
+                            <Skills>Java</Skills>
                             
                         </Box>
                         <Box>
@@ -67,11 +67,11 @@ const InfoSection2 = ({lightBg, id, imgStart, topLine, lightText, heading, darkT
                             <Skills>php</Skills>
                             
                         </Box> */}
-                        <Box1 class="disapear">
+                        <Box class="disapear">
                             <Img src={obrazek10}  alt={alt}/>
                             <Skills>MySql</Skills>
                             
-                        </Box1>
+                        </Box>
                         
                     </FeaturesContent>
 

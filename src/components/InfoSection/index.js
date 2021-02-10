@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from '../ButtonElement'
-import obrazek1 from '../../images/zdjecie.jpg'
+import obrazek1 from '../../images/zdjecie.jfif'
 import {InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Img} from './InfoElements'
 
 

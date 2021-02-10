@@ -138,31 +138,45 @@ export const ServicesP = styled.p`
 `
 
 export const LinksContainer = styled.div`
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 260px;
     
+
+    @media screen and (max-width: 970px){
+        grid-gap: 210px;
+    }
+
+    @media screen and (max-width: 870px){
+        grid-gap: 170px;
+    }
+
+    @media screen and (max-width: 800px){
+        grid-gap: 150px;
+    }
+
+    @media screen and (max-width: 768px){
+        grid-gap: 360px;
+    }
+
+    @media screen and (max-width: 610px){
+        grid-gap: 280px;
+    }
+
+    @media screen and (max-width: 510px){
+        grid-gap: 240px;
+    }
+
+    @media screen and (max-width: 450px){
+        grid-gap: 160px;
+    }
+
 `
 export const ProjectLink = styled.div`
     text-decoration: none;
     
 `
 
-export const link = styled.a`
-
-    transition: all 0.2s ease-in-out;
-    color: white !important; 
-  
-
-    &:hover{
-        transform: scale(1.02);
-        transition: all 0.2s ease-in-out;
-        cursor: pointer;
-        
-    }
-    
-`
 
 
 

@@ -28,17 +28,6 @@ const HeroSection = () => {
                 <HeroP>
                 My name is Kamil and i'm Junior Front End Developer
                 </HeroP>
-                {/* <HeroBtnWrapper>
-                    <Button to="/"
-                    onMouseEnter={onHover}
-                    onMouseLeave={onHover}
-                    primary='true'
-                    dark='true'
-                    onClick={toggleContact}
-                    >
-                        Napisz do mnie {hover ? <ArrowForward /> : <ArrowRight/>}
-                    </Button>
-                </HeroBtnWrapper> */}
             </HeroContent>
         </HeroContainer>
     )

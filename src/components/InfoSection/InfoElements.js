@@ -98,7 +98,11 @@ export const ImgWrap = styled.div`
     max-width: 355px;
     height: 100%;
     border-radius: 120px;
+    margin-left: 40px;
 
+    @media screen and (max-width: 910px){
+        margin-left: 10px;
+    }
 
     @media screen and (max-width: 768px){
     position: relative;

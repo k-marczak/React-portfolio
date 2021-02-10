@@ -20,56 +20,18 @@ const Footer = () => {
                 <Button className="btn" onClick={toggleHome}>
                     Back to top
                 </Button>
-                {/* <FooterLinksContainer>
-                    <FooterLinksWrapper>
-                        <FooterLinkItems>
-                                <FooterLinkTitle>About Us</FooterLinkTitle>
-                                <FooterLink to="/signin">How it works</FooterLink>
-                                <FooterLink to="/signin">Testimonials</FooterLink>
-                                <FooterLink to="/signin">Careers</FooterLink>
-                                <FooterLink to="/signin">Investors</FooterLink>
-                                <FooterLink to="/signin">Terms od Service</FooterLink>
-                        </FooterLinkItems>
-                        <FooterLinkItems>
-                                <FooterLinkTitle>Contact Us</FooterLinkTitle>
-                                <FooterLink to="/signin">Contact</FooterLink>
-                                <FooterLink to="/signin">Support</FooterLink>
-                                <FooterLink to="/signin">Destinations</FooterLink>
-                                <FooterLink to="/signin">Sponsorships</FooterLink>
-                        </FooterLinkItems>
-                    </FooterLinksWrapper>
-                    <FooterLinksWrapper>
-                        <FooterLinkItems>
-                                <FooterLinkTitle>Videos</FooterLinkTitle>
-                                <FooterLink to="/signin">Submit Video</FooterLink>
-                                <FooterLink to="/signin">Ambassadors</FooterLink>
-                                <FooterLink to="/signin">Agency</FooterLink>
-                                <FooterLink to="/signin">Influencer</FooterLink>
-                        </FooterLinkItems>
-                        <FooterLinkItems>
-                                <FooterLinkTitle>Social Media</FooterLinkTitle>
-                                <FooterLink to="/signin">Instagram</FooterLink>
-                                <FooterLink to="/signin">Facebook</FooterLink>
-                                <FooterLink to="/signin">Youtube</FooterLink>
-                                <FooterLink to="/signin">Twitter</FooterLink>
-                        </FooterLinkItems>
-                    </FooterLinksWrapper>
-                </FooterLinksContainer> */}
+                
                 <SocialMedia>
                     <SocialMediaWrap>
-                        {/* <SocialLogo to='/'>
+                       
+                        <SocialLogo style={{cursor: 'default'}}>
                         
-                        <TiLocation style={{marginRight: '5px'}}/>    Warsaw, Poland 
-
-                        </SocialLogo> */}
-                        <SocialLogo to='/'>
-                        
-                        <FiSmartphone style={{marginRight: '5px'}}/>    +48 882 186 957 
+                        <FiSmartphone style={{marginRight: '5px'}}/>   <p className="tel"> +48 882 186 957 </p>
 
                         </SocialLogo>
-                        <SocialLogo to='/'>
+                        <SocialLogo style={{cursor: 'default'}}>
                         
-                        <MdEmail style={{marginRight: '5px'}}/>    k_marczak@outlook.com 
+                        <MdEmail style={{marginRight: '5px'}}/>  <p className="email"> k_marczak@outlook.com </p> 
 
                         </SocialLogo>
 
@@ -82,9 +44,7 @@ const Footer = () => {
                             <SocialIconLink href="https://www.linkedin.com/in/kamil-marczakk/" target="_blank" aria-label="Linkedin">
                                 <FaLinkedin />
                             </SocialIconLink>
-                            <SocialIconLink href="https://www.instagram.com/koozlarz/" target="_blank" aria-label="Instagram">
-                                <FaInstagram />
-                            </SocialIconLink>
+                            
                             <SocialIconLink href="https://www.facebook.com/Cameel54/" target="_blank" aria-label="Facebook">
                                 <FaFacebook />
                             </SocialIconLink>
