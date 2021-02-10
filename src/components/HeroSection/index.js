@@ -16,7 +16,7 @@ const HeroSection = () => {
    
 
     const toggleContact = () => {
-        scroll.scrollTo(800);
+        scroll.scrollTo(720);
     }
 
     return (

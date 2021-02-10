@@ -204,7 +204,7 @@ const InfoSection = ({lightBg, id }) => {
                         <StyledTextArea name="message" value={state.message} onChange={handleInput} />
                         {error && ( <StyledError><p>{error}</p></StyledError> )}
                        
-                        <StyledButton style={{marginTop: '7px'}} type="submit">Send Message</StyledButton>
+                        <StyledButton style={{marginTop: '7px'}} type="submit">Send</StyledButton>
                     </StyledForm>    
               
                 </StyledFormWrapper>

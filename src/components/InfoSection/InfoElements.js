@@ -68,7 +68,8 @@ export const TopLine = styled.p`
 
 
 export const Heading = styled.h1`
-    margin-bottom: 64px;
+    margin-top: -120px;
+    margin-bottom: 50px;
     font-size: 48px;
     line-height: 1.1;
     font-weight: 600;
@@ -82,8 +83,8 @@ export const Heading = styled.h1`
 
 
 export const Subtitle = styled.p`
-    max-width: 550px;
-    margin-bottom: 35px;
+    max-width: 650px;
+    margin-top: -5px;
     font-size: 18px;
     line-height: 33px;
     color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
@@ -99,20 +100,20 @@ export const ImgWrap = styled.div`
     height: 100%;
     border-radius: 120px;
     margin-left: 40px;
-    margin-top: 50px;
+    margin-top: 20px;
 
     @media screen and (max-width: 910px){
         margin-left: 10px;
     }
 
     @media screen and (max-width: 768px){
-    position: relative;
-    right: 25px;    
+        position: relative;
+        right: 25px;    
     }
 
 
     @media screen and (max-width: 420px){
-    right: 55px;    
+        right: 55px;    
     }
 
     

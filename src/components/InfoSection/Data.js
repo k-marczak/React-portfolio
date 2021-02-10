@@ -5,7 +5,7 @@ export const homeObjOne = {
     lightTextDesc: true,
     topLine: '',
     heading: 'About me',
-    description: "Hi my name is Kamil. I am looking for a job in IT as a junior front-end developer. I know technologies such as HTML5, CSS3 language describing the look of the page, RWD - technology for creating responsive websites very well. I've also got basic knowledge of MySQL and Photoshop. At this moment, I put the greatest emphasis on developing in such technologies like JavaScript, Bootstrap and React. ",
+    description: "Hello, my name is Kamil. I am looking for a job in IT as a junior front-end developer. My main goal is development and further gaining professional experience. I know well technologies such as Javascript, HTML5, CSS3 language describing the appearance of the website, RWD - the technology of creating responsive websites. At the moment, my greatest emphasis is on React programming. I also have basic knowledge of MySQL, TypeScript, Git, Webpack, Node.js, Express.js, MongoDB.  ",
     buttonLabel: 'Get started',
     imgStart: false, 
     img: require('../../images/svg-1.svg'),

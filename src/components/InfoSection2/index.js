@@ -5,10 +5,10 @@ import obrazek3 from '../../images/js.png'
 import obrazek4 from '../../images/220px-React-icon.svg.png'
 import obrazek5 from '../../images/jquery.png'
 import obrazek6 from '../../images/java-icon.svg'
-import obrazek7 from '../../images/bootstrap.png'
+import obrazek7 from '../../images/express.svg'
 import obrazek8 from '../../images/github.png'
 import obrazek9 from '../../images/php.svg'
-import obrazek10 from '../../images/MySQL.svg'
+import obrazek10 from '../../images/mongo.svg'
 import obrazek11 from '../../images/npm.png'
 import obrazek12 from '../../images/Firebase.png'
 import {Img, Features, FeaturesContent, Box, Box1, SkillsWrapper, Skills } from './InfoElements'
@@ -53,7 +53,7 @@ const InfoSection2 = ({lightBg, id, imgStart, topLine, lightText, heading, darkT
                         </Box>
                         <Box>
                             <Img src={obrazek7} alt={alt}/>
-                            <Skills>Bootstrap</Skills>
+                            <Skills>Express.js</Skills>
                             
                         </Box>
 
@@ -68,8 +68,8 @@ const InfoSection2 = ({lightBg, id, imgStart, topLine, lightText, heading, darkT
                             
                         </Box> */}
                         <Box1 class="disapear">
-                            <Img src={obrazek10}  alt={alt}/>
-                            <Skills>MySql</Skills>
+                            <Img src={obrazek10} style={{height: '30px', position: 'relative', right: '5px', top: '7px'}}  alt={alt}/>
+                            <Skills style={{marginTop: '17px'}}>MongoDB</Skills>
                             
                         </Box1>
                         

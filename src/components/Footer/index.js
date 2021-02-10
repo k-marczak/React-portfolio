@@ -7,6 +7,7 @@ import { TiLocation } from 'react-icons/ti';
 import { FiSmartphone } from 'react-icons/fi';
 import { MdEmail } from 'react-icons/md';
 import "./style.css"
+import { IoMdArrowUp } from 'react-icons/io';
 
 const Footer = () => {
 
@@ -18,7 +19,7 @@ const Footer = () => {
         <FooterContainer>
             <FooterWrap>
                 <Button className="btn" onClick={toggleHome}>
-                    Back to top
+                    Back to top <IoMdArrowUp style={{marginLeft: '10px'}} /> 
                 </Button>
                 
                 <SocialMedia>
