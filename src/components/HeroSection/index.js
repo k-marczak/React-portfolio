@@ -3,6 +3,7 @@ import Video from '../../Video/video.mp4'
 import { Button } from '../ButtonElement';
 import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements';
 import { animateScroll as scroll } from 'react-scroll';
+import { BiChevronsDown } from 'react-icons/bi';
 
 const HeroSection = () => {
 
@@ -15,7 +16,7 @@ const HeroSection = () => {
    
 
     const toggleContact = () => {
-        scroll.scrollToBottom();
+        scroll.scrollTo(800);
     }
 
     return (
@@ -28,6 +29,9 @@ const HeroSection = () => {
                 <HeroP>
                 My name is Kamil and i'm Junior Front End Developer
                 </HeroP>
+                <Button style={{marginTop: '-30px'}} onClick={toggleContact}>
+                    Scroll down <BiChevronsDown style={{marginLeft: '10px'}} />
+                </Button>
             </HeroContent>
         </HeroContainer>
     )
