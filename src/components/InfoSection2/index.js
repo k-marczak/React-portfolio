@@ -67,11 +67,11 @@ const InfoSection2 = ({lightBg, id, imgStart, topLine, lightText, heading, darkT
                             <Skills>php</Skills>
                             
                         </Box> */}
-                        <Box class="disapear">
+                        <Box1 class="disapear">
                             <Img src={obrazek10}  alt={alt}/>
                             <Skills>MySql</Skills>
                             
-                        </Box>
+                        </Box1>
                         
                     </FeaturesContent>
 
