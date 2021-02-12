@@ -3,6 +3,8 @@ import { Button } from '../ButtonElement'
 import obrazek1 from '../../images/svg-3.svg'
 import {InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Img} from './InfoElements'
 import styled, {createGlobalStyle, css} from 'styled-components';
+import './style.css'
+import {db} from '../../firebase'
 
 
 const GlobalStyle = createGlobalStyle`
@@ -45,14 +47,14 @@ const StyledFormWrapper = styled.div`
 
     @media screen and (max-width: 768px) {
 
-        top: 120px;
+        top: 70px;
         
     }
 
     @media screen and (max-width: 480px){
         height: 310px;
         position: relative;
-        top: 200px;
+        top: 90px;
     }
     
 `;
@@ -142,73 +144,83 @@ const StyledError = styled.div`
 
 
 
-const initalState = {
-    name: '',
-    email: '',
-    message: '',
-
-}
 
 const InfoSection = ({lightBg, id }) => {
 
-    const [state, setState] = useState(initalState);
-    const [error, setError] = useState('');
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
     
-    const handleSubmit = e => {
-        
-
-        
-
-        
-        for(let key in state) {
-            if(state[key] === ''){
-                setError(`You must provide the ${key}`)
-                return
-            }
-        }
-
-        setError('');
-        const regex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
-        const test = regex.test(state.email);
-        alert("Email has been sent, thank you.")
-
+    const handleSubmit = (e) => {
         e.preventDefault();
 
-    }
+        db.collection('contacts').add({
+            name: name,
+            email: email,
+            message: message,
+        })
+        .then(() => {
+            alert('Message has been submitted. Thank you :)')
+        })
+        .catch((error) => {
+            alert(error.message);
+        });
 
-    const handleInput = e => {
-        const inputName = e.currentTarget.name;
-        const value = e.currentTarget.value;
-
-        setState(prev => ({...prev, [inputName]: value}))
-        
-
-
-
-    }
- 
+        setName('');
+        setEmail('');
+        setMessage('');
+    };
 
     return (
         <>
         <GlobalStyle />
             <InfoContainer lightBg={lightBg} id={id}>
                 <StyledFormWrapper>
-                    <StyledForm onSubmit={handleSubmit}>
-                        <h2 style={{marginBottom: '10px'}}>Contact Form</h2>
-                        <label class="element3"htmlFor='name'>Name</label>
-                        <StyledInput type='text' name="name" value={state.name} onChange={handleInput} />
-                        <label class="element2" htmlFor="email">Email</label>
-                        <StyledInput type="email" name="email" value={state.email} onChange={handleInput}  />
-                
-                        <label class="element" htmlFor="message">Message</label>
-                        <StyledTextArea name="message" value={state.message} onChange={handleInput} />
-                        {error && ( <StyledError><p>{error}</p></StyledError> )}
+                    <form className="form" onSubmit={handleSubmit}>
+                        <h2 style={{marginTop: '-10px', textAlign: 'center', fontSize: '30px'}}>Contact Form</h2>
+
+                        <label class="element3" >Name</label>
+                        <input 
+                            laceholder="name" 
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                        />
+
+                        <label class="element2" placeholder="Email">Email</label>
+                        <input 
+                            placeholder="name" 
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)} />
+                        
+
+                        <label class="element" placeholder="Message">Message</label>
+                        <textarea 
+                            placeholder="Message"
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)}></textarea>
+
+                        <button type='submit' style={{marginBottom: '30px'}}>Submit</button>
                        
-                        <StyledButton style={{marginTop: '7px'}} type="submit">Send</StyledButton>
-                    </StyledForm>    
+                        
+                    </form>    
               
                 </StyledFormWrapper>
             </InfoContainer>
+
+            {/* <form className="form" id={id}>
+                <h1>Contact form</h1>
+
+                <label>Name</label>
+                <input placeholder="Email" />
+
+                <label>Name</label>
+                <input placeholder="Email" />
+
+                <label>Name</label>
+                <textarea placeholder='Message'></textarea>
+
+
+            </form> */}
         </>
     )
 }
