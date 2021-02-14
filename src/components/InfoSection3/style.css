@@ -83,8 +83,13 @@
     cursor: pointer;
     transition: 0.2s ease-in-out;
     margin-top: 10px;
+    transform: .5s ease-in-out;
+    position: relative;
+    
   }
   
   .form > button:hover {
-    background-color: rgb(0, 0, 196);
+    background-color: lightgray;
+    color: black;
+
   }
