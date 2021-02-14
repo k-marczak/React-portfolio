@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { MdKeyboardArrowDown, MdArrowDownward } from 'react-icons/md';
+import image from '../../images/pexels.jpg'
+
 
 export const HeroContainer = styled.div`
     background: #0c0c0c;
@@ -30,6 +32,8 @@ export const VideoBg = styled.video`
     -o-object-fit: cover;
     object-fit: cover;
     background: #232a34;
+
+    
 `
 
 export const HeroContent = styled.div`
@@ -42,6 +46,8 @@ export const HeroContent = styled.div`
     align-items: center;
 
 `;
+
+
 
 export const HeroH1 = styled.h1`
     color: #fff;
@@ -107,6 +113,8 @@ export const ArrowRight = styled(MdKeyboardArrowDown)`
     margin-left: 8px;
     font-size: 20px;
 `;
+
+
 
 
 
