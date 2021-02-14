@@ -9,8 +9,8 @@
 
 @media screen and (max-width: 468px){
     .button{
-        
+        height: 54px;
         position: relative;
-        top: -14px;
+        top: -13.5px;
     }
 }
