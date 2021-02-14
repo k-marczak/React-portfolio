@@ -199,7 +199,7 @@ const InfoSection = ({lightBg, id }) => {
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}></textarea>
 
-                        <button type='submit' style={{marginBottom: '30px'}}>Submit</button>
+                        <button type='submit' style={{marginBottom: '30px', zIndex: '10000'}}>Submit</button>
                        
                         
                     </form>    
