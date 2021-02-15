@@ -73,7 +73,7 @@
   }
   
   .form > button {
-    padding: 10px;
+    padding: 20px;
     border: none;
     background-color: black;
     font-weight: 500;
@@ -101,6 +101,10 @@
   .your-name{
     position: relative !important;
     top: 12px !important;
+  }
+
+  .something-diff{
+    height: 140px !important;
   }
 
   @media screen and (max-width: 468px){
