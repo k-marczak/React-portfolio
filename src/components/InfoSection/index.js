@@ -8,7 +8,7 @@ import "aos/dist/aos.css"
 const InfoSection = ({lightBg, id, imgStart, topLine, lightText, heading, darkText, description, buttonLabel, alt, primary, dark, dark2}) => {
 
     useEffect(() => {
-        Aos.init({ duration: 1000, once: true });
+        Aos.init({ duration: 300, once: true });
     }, [])
     
 
@@ -19,7 +19,7 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, heading, darkTe
                 <InfoWrapper>
                     <InfoRow imgStart={imgStart}>
                         <Column1>
-                            <TextWrapper data-aos="fade-right">
+                            <TextWrapper data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
                                 <TopLine>{topLine}</TopLine>
                                 <Heading lightText={lightText}>{heading}</Heading>
                                 <Subtitle darkText={darkText}>{description}</Subtitle>
@@ -39,7 +39,7 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, heading, darkTe
                             </TextWrapper>
                         </Column1>
                         <Column2>
-                            <ImgWrap data-aos="fade-left">
+                            <ImgWrap data-aos="fade-left" data-aos-duration="500" data-aos-once="true">
                                 <Img src={obrazek1} alt={alt}/>
                             </ImgWrap>
                         </Column2>

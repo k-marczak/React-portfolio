@@ -91,5 +91,14 @@
   .form > button:hover {
     background-color: lightgray;
     color: black;
+  }
 
+  .element3{
+    position: relative !important;
+    top: 9px !important;
+  }
+
+  .your-name{
+    position: relative !important;
+    top: 12px !important;
   }

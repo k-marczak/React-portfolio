@@ -128,8 +128,8 @@ export const Box = styled.div`
     width: 130px;
 
     &:hover{
-        transform: scale(1.06);
-        transition: all 0.2s ease-in-out;
+        transform: scale(1.16) !important;
+        transition: all 0.2s ease-in-out !important;
         
     }
 
@@ -156,8 +156,8 @@ export const Box1 = styled.div`
     width: 130px;
     
     &:hover{
-        transform: scale(1.06);
-        transition: all 0.2s ease-in-out;
+        transform: scale(1.16) !important;
+        transition: all 0.2s ease-in-out !important;
         
     }
 

@@ -179,23 +179,25 @@ const InfoSection = ({lightBg, id }) => {
                     <form className="form" onSubmit={handleSubmit}>
                         <h2 style={{marginTop: '-10px', textAlign: 'center', fontSize: '30px'}}>Contact Form</h2>
 
-                        <label class="element3" >Name</label>
+                        <label className="element3">Name</label>
                         <input 
-                            laceholder="name" 
+                            className="your-name"
+                            placeholder="Your name..." 
                             value={name}
                             onChange={(e) => setName(e.target.value)}
+
                         />
 
-                        <label class="element2" placeholder="Email">Email</label>
+                        <label className="element2" placeholder="Email">Email</label>
                         <input 
-                            placeholder="name" 
+                            placeholder="Email..." 
                             value={email}
                             onChange={(e) => setEmail(e.target.value)} />
                         
 
-                        <label class="element" placeholder="Message">Message</label>
+                        <label className="element" placeholder="Message">Message</label>
                         <textarea 
-                            placeholder="Message"
+                            placeholder="Message..."
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}></textarea>
 
@@ -206,21 +208,6 @@ const InfoSection = ({lightBg, id }) => {
               
                 </StyledFormWrapper>
             </InfoContainer>
-
-            {/* <form className="form" id={id}>
-                <h1>Contact form</h1>
-
-                <label>Name</label>
-                <input placeholder="Email" />
-
-                <label>Name</label>
-                <input placeholder="Email" />
-
-                <label>Name</label>
-                <textarea placeholder='Message'></textarea>
-
-
-            </form> */}
         </>
     )
 }
