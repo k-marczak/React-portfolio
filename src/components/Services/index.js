@@ -34,15 +34,15 @@ const Services = () => {
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={Icon2} />
-                    <ServicesH2>Support IT</ServicesH2>
-                    <ServicesP>This page is inspired by the IT world, written in HTML CSS.</ServicesP>
+                    <ServicesH2>Photography Portfolio</ServicesH2>
+                    <ServicesP>Photography portfolio using html css js. Fully responsive. Implemented animations on website.</ServicesP>
                    
 
                     <LinksContainer>
-                        <a href="https://github.com/k-marczak/Project-support-it" className="link" style={{ textDecoration: 'none'}} target="_blank" aria-label="Twitter">
+                        <a href="https://github.com/k-marczak/html-css-website" className="link" style={{ textDecoration: 'none'}} target="_blank" aria-label="Twitter">
                                     Github <GrGithub />
                         </a>
-                        <a href="https://support-it.netlify.app/" className="link" style={{ textDecoration: 'none', marginBottom: '10px'}} target="_blank" aria-label="Twitter">
+                        <a href="https://photography-portfolio1.netlify.app/" className="link" style={{ textDecoration: 'none', marginBottom: '10px'}} target="_blank" aria-label="Twitter">
                                     Live <GiNetworkBars />
                         </a>
                     </LinksContainer>
