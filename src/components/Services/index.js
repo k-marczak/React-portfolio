@@ -52,14 +52,14 @@ const Services = () => {
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={Icon3} />
-                    <ServicesH2>Zdrowie Covid</ServicesH2>
-                    <ServicesP>Simple multi-page website about covid-19. </ServicesP>
+                    <ServicesH2>Furniture Website</ServicesH2>
+                    <ServicesP>One-page web with furnitures. Added weather API on the bottom of the page. </ServicesP>
 
                     <LinksContainer>
-                        <a href="https://github.com/k-marczak/Zdrowie-covid-react" className="link" style={{ textDecoration: 'none'}} target="_blank" aria-label="Twitter">
+                        <a href="https://github.com/k-marczak/furniture-website" className="link" style={{ textDecoration: 'none'}} target="_blank" aria-label="Twitter">
                                     Github <GrGithub />
                         </a>
-                        <a href="https://zdrowie-covid.netlify.app/" className="link" style={{ textDecoration: 'none', marginBottom: '10px'}} target="_blank" aria-label="Twitter">
+                        <a href="https://furnitures.netlify.app/" className="link" style={{ textDecoration: 'none', marginBottom: '10px'}} target="_blank" aria-label="Twitter">
                                     Live <GiNetworkBars />
                         </a>
                     </LinksContainer>
