@@ -1,0 +1,17 @@
+.button{
+    height: 50px;
+}
+
+.button:hover{
+    transform: scale(1.03);
+}
+
+
+@media screen and (max-width: 468px){
+    .button{
+        height: 58px;
+        position: relative;
+        top: -1px;
+    }
+}
+

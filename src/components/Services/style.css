@@ -1,0 +1,11 @@
+.link{
+    color: #0e153a;
+    transition: all 0.2s ease-in-out;
+    
+}
+
+.link:hover{
+        transform: scale(1.12);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+}
